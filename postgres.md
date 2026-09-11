@@ -37,6 +37,7 @@ psql -h hostname -p 5432 -U username -d database_name
 # postgres (in psql)
 
 - Data Types: https://www.postgresql.org/docs/current/datatype.html 
+- Additional Info: https://neon.com/postgresql/tutorial
 
 - \l - Lists all Databases
 - \c  \<database_name\> - connect to db
