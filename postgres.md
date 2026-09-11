@@ -538,3 +538,96 @@ psql -h hostname -p 5432 -U username -d database_name
         SELECT * FROM <table>
         JOIN <table> USING (col);
         ```
+    - Consider using NATURAL JOIN too.
+
+# YET TO COVER: (As referenced from https://neon.com/postgresql/tutorial)
+- Set Operations
+    - Union – combine result sets of multiple queries into a single result set.
+    - Intersect – combine the result sets of two or more queries and return a single result set containing rows that appear in both result sets.
+    - Except – return the rows from the first query that do not appear in the output of the second query.
+
+- Grouping sets, Cubes, and Rollups
+    - Grouping Sets  – generate multiple grouping sets in reporting.
+    - Cube – define multiple grouping sets that include all possible combinations of dimensions.
+    - Rollup – generate reports that contain totals and subtotals.
+
+- Subquery
+    - Subquery – write a query nested inside another query.
+    - Correlated Subquery – show you how to use a correlated subquery to perform a query that depends on the values of the current row being processed.
+    - ANY  – retrieve data by comparing a value with a set of values returned by a subquery.
+    - ALL – query data by comparing a value with a list of values returned by a subquery.
+    - EXISTS  – check for the existence of rows returned by a subquery.
+
+- Common Table Expressions
+    - PostgreSQL CTE – introduce you to PostgreSQL common table expressions or CTEs.
+    - Recursive query using CTEs – discuss the recursive query and learn how to apply it in various contexts.
+
+- Transactions
+    - PostgreSQL Transactions – show you how to handle transactions in PostgreSQL using BEGIN, COMMIT, and ROLLBACK statements.
+
+- Import Data
+    - Import CSV file into Table – show you how to import CSV file into a table.
+
+- Managing Tables
+    - Data types – cover the most commonly used PostgreSQL data types.
+    - Select Into & Create table as– shows you how to create a new table from the result set of a query.
+    - Sequences – introduce you to sequences and describe how to use a sequence to generate a sequence of numbers.
+    - Identity column – show you how to use the identity column.
+    - Rename table – change the name of the table to a new one.
+    - Add column – show you how to add one or more columns to an existing table.
+    - Drop column – demonstrate how to drop a column of a table.
+    - Change column data type – show you how to change a column’s data.
+    - Rename column – illustrate how to rename one or more table columns.
+    - Truncate table – remove all data in a large table quickly and efficiently.
+    - Temporary table – show you how to use the temporary table.
+    - Copy a table – show you how to copy a table to a new one.
+
+- PostgreSQL Constraints
+    - DELETE CASCADE – show you how to automatically delete rows in child tables when the corresponding rows in the parent table are deleted.
+    - DEFAULT constraint – specify a default value for a column using the DEFAULT constraint.
+
+- PostgreSQL Data Types in Depth
+    - Boolean – store TRUE and FALSEvalues with the Boolean data type.
+    - CHAR, VARCHAR, and TEXT – learn how to use various character types including CHAR, VARCHAR, and TEXT.
+    - NUMERIC – show you how to use NUMERIC type to store values that precision is required.
+    - DOUBLE PRECISION – learn to store inexact, variable-precision numbers in the database. The DOUBLE PRECISION type is also known as the FLOAT type.
+    - REAL – guide you on how to use single-precision floating-point numbers in the database.
+    - Integer – introduce you to various integer types in PostgreSQL including SMALLINT, INT and BIGINT.
+    - DATE  – introduce the DATE data type for storing date values.
+    - Timestamp – understand timestamp data types quickly.
+    - Interval – show you how to use interval data type to handle a period effectively.
+    - TIME – use the TIME datatype to manage the time of day values.
+    - UUID – guide you on how to use UUID datatype and how to generate UUID values using supplied modules.
+    - Array – show you how to work with arrays and introduce you to some handy functions for array manipulation.
+    - hstore – introduce you to the hstore data type, a set of key/value pairs stored in a single value in PostgreSQL.
+    - JSON – illustrate how to work with JSON data type and use some of the most important JSON operators and functions.
+    - User-defined data types – show you how to use the CREATE DOMAIN and CREATE TYPE statements to create user-defined data types.
+    - Enum – learn how to create an enum type that defines a list of fixed values for a column.
+    - XML – show you how to store XML documents in the database using the XML data type.
+    - BYTEA – learn how to store binary strings in the database.
+    - Composite Types – show you how to define a composite type that consists of multiple fields.
+
+- Conditional Expressions & Operators
+    - CASE – show you how to form conditional queries with CASE expression.
+    - COALESCE – return the first non-null argument. You can use it to substitute NULL by a default value.
+    - NULLIF – return NULL if the first argument equals the second one.
+    - CAST – convert from one data type into another e.g., from a string into an integer, from a string into a date.
+
+- PostgreSQL Utilities
+    - psql commands – show you the most common psql commands that help you interact with psql faster and more effectively.
+
+- PostgreSQL Recipes
+    - How to compare two tables – describe how to compare data in two tables in a database.
+    - How to delete duplicate rows in PostgreSQL – show you various ways to delete duplicate rows from a table.
+    - How to generate a random number in a range  – illustrate how to generate a random number in a specific range.
+    - EXPLAIN statement– guide you on how to use the EXPLAIN statement to return the execution plan of a query.
+    - PostgreSQL vs. MySQL – compare PostgreSQL with MySQL in terms of functionalities.
+
+- Advanced PostgreSQL 
+    - PostgreSQL PL/pgSQL
+    - PostgreSQL Triggers
+    - PostgreSQL Views
+    - PostgreSQL Indexes
+    - PostgreSQL JSON Functions 
+    - PostgreSQL Window Functions 
+    - PostgreSQL Administration
